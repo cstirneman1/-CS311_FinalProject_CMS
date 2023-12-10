@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+<body>
+  <header>
+    <h1>Unit Converter</h1>
+  </header>
+
+  <main>
+    <h4 id="conversion-selector-instructions">Select a conversion below</h4>
+    <div class="selection-container">
+      <div id="left-radio-buttons">
+          <label>
+            <input type="radio" name="conversion" value="Meters to Feet"> Meters to Feet
+          </label>
+          <label>
+            <input type="radio" name="conversion" value="Kilometers to Miles"> Kilometers to Miles
+          </label>
+          <label>
+            <input type="radio" name="conversion" value="Celsius to Fahrenheit"> Celsius to Fahrenheit
+          </label>
+          <label>
+            <input type="radio" name="conversion" value="Kilograms to Pounds"> Kilograms to Pounds
+          </label>
+          <label>
+            <input type="radio" name="conversion" value="Grams to Ounces"> Grams to Ounces
+          </label>
+      </div>
+
+      <div id="right-radio-buttons">
+        <label>
+          <input type="radio" name="conversion" value="Feet to Meters"> Feet to Meters
+        </label>
+        <label>
+          <input type="radio" name="conversion" value="Miles to Kilometers"> Miles to Kilometers
+        </label>
+        <label>
+          <input type="radio" name="conversion" value="Fahrenheit to Celsius"> Fahrenheit to Celsius
+        </label>
+        <label>
+          <input type="radio" name="conversion" value="Pounds to Kilograms"> Pounds to Kilograms
+        </label>
+        <label>
+          <input type="radio" name="conversion" value="Ounces to Grams"> Ounces to Grams
+        </label>
+      </div>
+    </div>
+
+    <h4 id="value-instructions">Enter the value you want to convert</h4>
+    <div class="unit-value-container">
+      <div id="value-textbox">
+        <label>
+          <input type="text" id="conversion-value" placeholder="Enter a value">
+        </label>
+      </div>
+    </div>
+
+    <button id="convert-button" onclick="convert()">Convert</button>
+
+    <p id="converted-answer" style="display: none;"> Your converted answer is</p>
+  </main>
+  
+  
+    <script src="js/conversion.js"></script>
+  </body>
+</html>
